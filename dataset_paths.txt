@@ -1,0 +1,2 @@
+DATASET1_PATH=C:\Users\isjim\.cache\kagglehub\datasets\hubertsidorowicz\football-players-stats-2024-2025\versions\43
+DATASET2_PATH=C:\Users\isjim\.cache\kagglehub\datasets\davidcariboo\player-scores\versions\602
