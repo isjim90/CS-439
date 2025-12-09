@@ -1,0 +1,85 @@
+
+Predicting Player Market Value in Europe's Top 5 Football Leagues
+
+
+1. DATASET SUMMARY
+
+Total Players Analyzed: 526
+Average Actual Market Value: 12,821,008
+Average Predicted Market Value: 12,596,759
+Average Prediction Error: 9,527,915
+Median Prediction Error: 6,462,442
+
+
+2. MODEL PERFORMANCE
+
+
+Best Model: Polynomial
+R2 Score: 0.4076
+Mean Squared Error: 204,323,484,171,755
+Mean Absolute Error: 8,832,424
+
+All Models Tested:
+              Model       R2          MSE          MAE
+         Polynomial 0.407640 2.043235e+14 8.832424e+06
+              Lasso 0.352925 2.231963e+14 9.621737e+06
+Multivariate Linear 0.352921 2.231976e+14 9.621977e+06
+   Gradient Descent 0.349123 2.245077e+14 9.606793e+06
+              Ridge 0.315036 2.362652e+14 9.619261e+06
+
+
+3. KEY FINDINGS
+
+
+Undervalued Players: 333 (63.3%)
+Overvalued Players: 193 (36.7%)
+
+Top 5 Most Undervalued Players:
+             Player           Squad  Actual_Value_M  Predicted_Value_M
+              Sávio Manchester City             0.2          36.152708
+      Gaëtan Perrin         Auxerre             6.0          39.483360
+    Ludovic Ajorque           Brest             4.0          31.169334
+     Emanuel Emegha      Strasbourg            20.0          46.674354
+Alexandre Lacazette            Lyon             8.0          34.498536
+
+
+4. LEAGUE INSIGHTS
+
+                    Avg_Difference  Avg_Ratio  Num_Players
+Comp                                                      
+fr Ligue 1              4425270.41       6.22           94
+de Bundesliga           2400049.12       2.79           99
+it Serie A              1220590.80       3.21          122
+es La Liga               -81211.26       4.83           99
+eng Premier League     -8146493.69       2.92          112
+
+
+5. POSITION INSIGHTS
+
+                  Avg_Difference  Avg_Actual_Value  Num_Players
+Position_Primary                                               
+DF                    -550871.89       10734659.09          176
+FW                    -885710.13       18256048.39          124
+GK                   -5382120.03        9604054.05           37
+MF                    1523624.88       11827777.78          189
+
+
+
+
+7. COURSE CONCEPTS APPLIED
+
+
+Regex: Cleaned player names, extracted nationality codes
+Linear Regression: Univariate and multivariate models
+Gradient Descent: Manual implementation with convergence
+Feature Engineering: Created 15+ derived features
+Correlation Analysis: Identified top predictive features
+PCA/SVD: Reduced 50+ features to 15 components
+Data Visualization: Created 14 plots and charts
+Pandas Optimization: Memory reduction, efficient data types
+Model Complexity: Train-test split, cross-validation, regularization
+Evaluation Metrics: R2, MSE, MAE, cross-validation scores
+
+
+END OF REPORT
+
